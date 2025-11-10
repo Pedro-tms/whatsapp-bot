@@ -52,3 +52,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'welcome';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
+
+$route['api/conversas'] = 'api/conversas';
+$route['api/mensagens/(:any)'] = 'api/mensagens/$1';
+$route['api/enviar'] = 'api/enviar';
+$route['api/assumir'] = 'api/assumir';
+$route['api/devolver'] = 'api/devolver';
